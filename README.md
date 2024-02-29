@@ -1,7 +1,6 @@
+![Banner](GitHub_Banner.png)
 
-
-<h1 align="left">Repositório de projetos da faculdade</h1>
-        <p align="left"><img src="https://komarev.com/ghpvc/?username=cabraldasilvac&color=yellow" alt="Profile views" /></p><br>
+<p align="left"><img src="https://komarev.com/ghpvc/?username=cabraldasilvac&color=yellow" alt="Profile views" /></p><br>
 
 -   🔥 Estudante de Análise e Desenvolvimento de Sistemas na Faculdade Descomplica.<br/>
 -   💬 Pergunte-me sobre. **JavaScript, HTML, CSS, SQL, Node.JS, Python, Java**
