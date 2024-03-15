@@ -1,11 +1,14 @@
 ![Banner](GitHub_Banner.png)
 
-<p align="left"><img src="https://komarev.com/ghpvc/?username=cabraldasilvac&color=yellow" alt="Profile views" /></p><br>
+<br>
+<br>
 
 -   🔥 Estudante de Análise e Desenvolvimento de Sistemas na Faculdade Descomplica.<br/>
 -   💬 Pergunte-me sobre. **JavaScript, HTML, CSS, SQL, Node.JS, Python, Java**
 -   👨‍💻 Saiba mais sobre a minha jornada na Faculdade. [Clique aqui!](https://website-red-eight.vercel.app/)
 <hr />
+
+<br>
 <div style="display: inline_block">
     <div class="techstack">
         <h2>🛠 &nbsp;Tech Stack</h2>
@@ -29,19 +32,7 @@
 
 </div>
 </div>
-<hr />
-<div class="analytics">
-<a href="https://github.com/cabraldasilvac">
-    <h2>⚙️ &nbsp;GitHub Analytics</h2>
-        <img width="530em" src="https://github-readme-stats-sigma-five.vercel.app/api?username=cabraldasilvac&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true" /> 
-        <img width="530em" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=cabraldasilvac&layout=compact&langs_count=5&theme=tokyonight" />
-</div>
-<hr />
-</div>
 
-##
-
-![Snake animation](https://github.com/cabraldasilvac/cabraldasilvac/blob/output/github-contribution-grid-snake.svg)
 
 
 
