@@ -3,8 +3,9 @@
 <br>
 <br>
 
--   🔥 Estudante de Análise e Desenvolvimento de Sistemas na Faculdade Descomplica.<br/>
--   💬 Pergunte-me sobre. **JavaScript, HTML, CSS, SQL, Node.JS, Python, Java**
+-   🔥 Graduado em  Análise e Desenvolvimento de Sistemas na Faculdade Descomplica.<br/>
+-   🔥 Pós-Graduando em Desenvolvimento FullStack na Faculdade Descomplica.<br/>
+-   💬 Pergunte-me sobre. **JavaScript, HTML, CSS, SQL, Node.JS, Python, Java, DevOps**
 -   👨‍💻 Saiba mais sobre a minha jornada na Faculdade. [Clique aqui!](https://website-red-eight.vercel.app/)
 <hr />
 
