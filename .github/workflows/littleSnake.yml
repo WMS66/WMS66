@@ -4,8 +4,7 @@ name: GitHub Contribution Snake
 # Controls when the workflow will run
 on:
   schedule: # Run at 9 am (BRT) on the 1st of every month (12 PM UTC)
-    - cron: '0 15 14 * *'
-    #- cron: '0 12 1 * *'
+    - cron: '0 12 1 * *'
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
     branches: [ "main" ]
