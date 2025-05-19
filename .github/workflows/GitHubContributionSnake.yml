@@ -1,0 +1,45 @@
+name: GitHubContributionSnake
+
+# Controls when the workflow will run
+on:
+  schedule: # Run at 9 am (BRT) on the 1st of every month (12 PM UTC)
+    - cron: '0 15 19 * *'
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  workflow_dispatch:  
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  generate_snake_animation:
+    name: Generate and Deploy Snake Animation
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout do repositório
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      # Gerar a animação da cobra
+      - name: Generate Snake Animation
+        uses: Platane/snk/svg-only@v3
+        id: snake-gif
+        with:
+          github_user_name: WMS66
+          outputs: dist/snake.svg?palette=github-dark
+          #svg_out_path: dist/github-contribution-grid-snake.svg
+      - name: Push changes
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # Deploy para o GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
