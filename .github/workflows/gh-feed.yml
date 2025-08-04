@@ -19,7 +19,7 @@ jobs:
       - name: Atualiza lista de posts Dev.to
         uses: cabraldasilvac/gh-feed@v1.0.0
         with:
-          feed-url: https://dev.to/feed/wcabraldasilvac
+          feed-url: https://dev.to/feed/wanderleycabral-dev
           post-limit: 2
           readme-path: ./README.md
 
