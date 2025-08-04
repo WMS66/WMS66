@@ -1,0 +1,35 @@
+name: Atualizar posts do blog no README
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+    
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Atualiza lista de posts Dev.to
+        uses: cabraldasilvac/gh-feed@v1.0.0
+        with:
+          feed-url: https://dev.to/feed/wcabraldasilvac
+          post-limit: 2
+          readme-path: ./README.md
+
+      - name: Commit e push se houver mudanças
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          CURRENT_DATETIME=$(date +"%Y-%m-%d %H:%M")
+          git add README.md
+          git diff --quiet && git diff --staged --quiet || (
+            git commit -m "[${CURRENT_DATETIME}] - Atualiza lista de posts do Dev.to"
+            git push
+          )
