@@ -1,4 +1,4 @@
-name: Atualizar posts do blog no README
+name: Atualizar posts do blog Dev.to no README
 
 on:
   schedule:
@@ -20,14 +20,14 @@ jobs:
         uses: cabraldasilvac/gh-feed@v1.0.0
         with:
           feed-url: https://dev.to/feed/wanderleycabral-dev
-          post-limit: 2
+          post-limit: 5
           readme-path: ./README.md
 
       - name: Commit e push se houver mudanças
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          CURRENT_DATETIME=$(date +"%Y-%m-%d %H:%M")
+          CURRENT_DATETIME=$(date +"%Y-%m-%d")
           git add README.md
           git diff --quiet && git diff --staged --quiet || (
             git commit -m "[${CURRENT_DATETIME}] - Atualiza lista de posts do Dev.to"
