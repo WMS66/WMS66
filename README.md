@@ -37,6 +37,7 @@
 ### Posts
 
  <!-- BLOG-POST-LIST:START -->
+- [Arquitetura Front-end](https://dev.to/wanderleycabral-dev/arquitetura-front-end-3b0g)
 - [🎨 A Arte e Ciência da Arquitetura Front-end](https://dev.to/wanderleycabral-dev/a-arte-e-ciencia-da-arquitetura-front-end-419p)
 <!-- BLOG-POST-LIST:END -->
 
